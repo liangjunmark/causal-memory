@@ -1,5 +1,8 @@
 # causal-memory
 
+Fork engineering workspace: [project memory and workflow entry](memory/INDEX.md).
+The integrated engineering model is a proposal; upstream engine behavior is unchanged by this setup.
+
 > **An agent memory system with a causal core — and the only one that models inhibition.**
 >
 > Facts, temporal state, and `decision → outcome` causal edges on one SQLite store,

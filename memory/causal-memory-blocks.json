@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "blocks": [
+    {"id": "cm.product", "key_prefix": "cm.product.", "includes": ["CM 产品行为、接口、用户语义"], "excludes": ["本机配置", "未确认的逆向业务意图"]},
+    {"id": "cm.engine", "key_prefix": "cm.engine.", "includes": ["存储、检索、算法与实现事实"], "excludes": ["单次执行状态", "尚未运行的性能结论"]},
+    {"id": "cm.workflow", "key_prefix": "cm.workflow.", "includes": ["项目隔离、使用、校准、工程追溯规则"], "excludes": ["其他项目业务合同", "未批准的接口方案"]},
+    {"id": "runtime", "key_prefix": "runtime.", "includes": ["可复用的环境或运行观察"], "excludes": ["当前游标、进度、常规绿灯；留 checkpoint"]}
+  ]
+}

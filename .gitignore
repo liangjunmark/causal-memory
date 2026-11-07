@@ -47,3 +47,9 @@ __pycache__/
 # Rendered memory dashboard embeds the real text of your memories — build it
 # locally with scripts/build_memory_dashboard.py, never commit the output
 memory-dashboard.html
+
+# Project memory runtime and machine-specific MCP bindings (never publish).
+/.causal-memory/
+/.cm/
+/.mcp.json
+/.codex/config.toml

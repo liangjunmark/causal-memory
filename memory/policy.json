@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "required": ["AGENTS.md", "CLAUDE.md", "memory/INDEX.md", "memory/global/facts.md", "memory/global/decisions.md", "memory/causal-memory-blocks.json", "memory/workflows/causal-memory.md", "memory/workflows/checkpoint.md", "memory/workflows/code-navigation.md", "memory/workflows/delivery.md"],
+  "soft_budgets": [
+    {"glob": "memory/INDEX.md", "max_lines": 100, "max_bytes": 8192},
+    {"glob": "memory/checkpoints/*.md", "max_lines": 120, "max_bytes": 8192},
+    {"glob": "memory/workflows/*.md", "max_lines": 180, "max_bytes": 16384}
+  ]
+}
