@@ -1,8 +1,18 @@
 # 独立工程 bootstrap 交接
 
-此文件先作为待发布的交接记录。配置与发布期间的唯一活动游标由发起工程
-`cm-external-project-bootstrap-20261107` 持有；发布成功后在这里封存结果。
-本记录不启动逆向试点，也不自动转入实现阶段。
+Schema: task-checkpoint/v1
+Task / phase: independent project bootstrap
+Epoch / revision: 1 / 1
+State: complete
+Authorized scope: fork clone, independent CM/memory/workflows, checks, Git commit/push
+Cursor: bootstrap complete; read reverse-pilot proposal for a separately authorized phase
+Last completed action: configuration commit pushed to origin/main; receipt below
+Pending handle / input: none
+Last consumed input: create a new child directory under the parent; commit/push allowed
+Next action / stop: stop at bootstrap delivery; no automatic engine/pilot implementation
+Read-manifest: INDEX; workflows; project-setup; integrated-design; reverse-pilot
+
+发起工程的 bootstrap 游标在本阶段收口后封存；此记录是新项目的恢复入口。
 
 ## 授权与边界
 
@@ -27,13 +37,19 @@
   无同范围重复/冲突。closure 与 recall 2 对齐通过；无旧记录待纠正。
 - 三个脚本语法通过；错库、旧回执、不存在 fact 的负对照均正确拒绝。
   配置生成幂等，遇已有不同配置时保持原文件。上述为配置/工作流运行证据。
+- 16 份入口/工作流/设计文档的相对链接目标、预算及四个分区登记检查通过，
+  无错误或预警；staged diff 和本机数据/凭据模式检查通过，未修改引擎。
 - CodeGraph 索引不存在；结构查询、Rust 构建、产品行为测试、性能、知识包
   导出导入及语义替换均 `not_run`。设计方案仍为 proposed。
 
 ## 发布
 
-待完成仓库链接/容量检查、staged diff 审阅及授权 Git 提交推送。
-DB、配置、探测脚本与日志均在忽略范围，不属于发布内容。
+- 配置提交：`07dd89defd0a9b9192c4232227dd5517b36e1827`，分支 `main`。
+- 远端：`https://github.com/liangjunmark/causal-memory.git`，`git push origin main`
+  已成功，输出 `b05d671..07dd89d main -> main`。
+- 本记录随后以独立文档提交封存；其提交身份由 Git 历史定位，避免自引用 hash。
+  发布检查不代表远端 Rust CI 已验收；该 CI 结果本阶段未检查。
+- DB、客户端配置、探测脚本与日志均在忽略范围，不属于发布内容。
 
 ## 下一阶段
 
